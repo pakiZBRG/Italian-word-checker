@@ -1,0 +1,156 @@
+*{
+   padding: 0;
+   margin: 0;
+   font-family: 'Josefin Sans';
+}
+
+body{
+   color: #fff;
+   background: rgb(26, 26, 26);
+   height: 100vh;
+   box-shadow: inset  0px 0px 90px 40px #000;
+}
+
+.header {
+   font-size: 3.5rem;
+   text-align: center;
+   position: absolute;
+   top: 200px;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: #dcdcdc;
+   text-shadow: 6px 6px #000;
+   animation-name: opacity;
+   animation-duration: 6s;
+}
+
+@keyframes opacity {
+   0% {opacity: 0}
+   100%{opacity: 1;}
+}
+
+#input {
+   color: rgb(196, 193, 193);
+   border: none;
+   background: transparent;
+   border-bottom: 2px solid gray;
+   width: 300px;
+   transition: 0.6s;
+   font-size: 2.2rem;
+   padding: 5px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-shadow: 4px 4px #000;
+}
+
+#input:focus{
+   outline: none; 
+}
+
+#input::placeholder{
+   font-size: 1.65rem;
+   color: rgb(75, 75, 75);
+}
+
+#btns{
+   position: absolute;
+   top: 65%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+#btn{
+   background: transparent;
+   color: #dcdcdc;
+   border: 1.5px solid #dcdcdc;
+   font-size: 1.5rem;
+   padding: 8px 25px 5px 25px;
+   border-radius: 25px;
+   cursor: pointer;
+   transition: .4s;
+   font-family: 'Josefin Sans'
+}
+
+#btn:hover{
+   background: #dcdcdc;
+   color: #333;
+   font-weight: bold;
+}
+
+button:focus{outline:none}
+
+#next {
+   cursor: pointer;
+   color: #dcdcdc;
+   background: transparent;
+   border: 1.5px solid #dcdcdc;
+   font-size: 1.5rem;
+   padding: 5px 15px;
+   border-radius: 20px;
+   transition: .4s;
+}
+
+#next:hover{
+   color: #333;
+   background: #dcdcdc;
+}
+
+#random {
+   position: absolute;
+   top: 35%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+#randomE {
+   color: #f9d342;
+   font-size: 2.5rem;
+   font-weight: bold;
+}
+
+#randomI {
+   color: #eecbce;
+   font-size: 1.9rem;
+   font-weight: bold;
+}
+
+.fa-check {
+   color: teal;
+   font-size: 4rem;
+   margin-left: 20px;
+}
+
+.fa-times {
+   color: crimson;
+   font-size: 4rem;
+   margin-left: 20px;
+}
+
+#count {
+   font-size: 2rem;
+   color: #eea4ab;
+   font-weight: bold;
+   text-align: center;
+   margin-top: 50px;
+}
+
+#num, #num2 {
+   color: #dcdcdc;
+}
+
+footer{
+   position: absolute;
+   bottom: 20px;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 1.2rem;
+}
+
+#streak {
+   color: teal;
+   font-size: 2rem;
+   font-weight: bold;
+   margin-top: 10px;
+}

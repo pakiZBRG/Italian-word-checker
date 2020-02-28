@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Learning Italian Words</title>
+      <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Noto+Sans+KR&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- FAVICON -->
+      <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+      <link rel="manifest" href="favicon/site.webmanifest">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="theme-color" content="#ffffff">
+   </head>
+
+   <body>
+      <div class='tekst'>
+         <h1 class='header'>Translate from English to Italian</h1>
+         <div id='random'>
+            <span id='randomE'></span>
+            <span id='randomI'></span>
+         </div>
+         <input type='text' id='input' placeholder='Input the word...' autocomplete="off">
+         <div id='btns'>
+            <button id='btn'>Translate</button>
+            <button id='next'>
+               <i class="fa fa-arrow-right"></i>
+            </button>
+            <p id='count'>Correct Answers: <span id='num'></span></p>
+            <p id='streak'>Streak:  <span id='num2'></span></p>
+         </div>
+      </div>
+
+      <footer>Nikola Pavlovic &copy; 2020.</footer>
+
+      <script src='main.js'></script>
+   </body>
+</html>
