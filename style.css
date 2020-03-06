@@ -30,16 +30,17 @@ body{
 }
 
 #input {
-   color: rgb(196, 193, 193);
+   color: #fff;
    border: none;
    background: transparent;
    border-bottom: 2px solid gray;
-   width: 300px;
-   transition: 0.6s;
+   width: 350px;
+   animation-name: opacity;
+   animation-duration: 3s;
    font-size: 2.2rem;
    padding: 5px;
    position: absolute;
-   top: 50%;
+   top: 47%;
    left: 50%;
    transform: translate(-50%, -50%);
    text-shadow: 4px 4px #000;
@@ -108,6 +109,8 @@ button:focus{outline:none}
    color: #f9d342;
    font-size: 2.5rem;
    font-weight: bold;
+   animation-name: opacity;
+   animation-duration: 3s;
 }
 
 #randomI {
@@ -136,7 +139,7 @@ button:focus{outline:none}
    margin-top: 50px;
 }
 
-#num, #num2 {
+#num, #num2, #num3 {
    color: #dcdcdc;
 }
 
@@ -150,6 +153,13 @@ footer{
 
 #streak {
    color: teal;
+   font-size: 2rem;
+   font-weight: bold;
+   margin-top: 10px;
+}
+
+#per {
+   color: #85b8cb;
    font-size: 2rem;
    font-weight: bold;
    margin-top: 10px;
