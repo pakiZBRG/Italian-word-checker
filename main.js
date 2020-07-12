@@ -8,10 +8,12 @@ fetch(myRequest)
       let count = 0;
       const counter = document.querySelector('#num');  
       counter.innerHTML = count; 
+
       let streak = 0;
       const streaker = document.querySelector('#num2');  
       streaker.innerHTML = streak; 
       let percentage = 0;
+
       const per = document.querySelector('#num3');
       per.innerHTML = percentage + '%';
       const pe = document.querySelector('#randomE')
@@ -45,7 +47,6 @@ fetch(myRequest)
          const randomItem = data[Math.floor(Math.random() * data.length)]        
          const itemE = randomItem[Object.keys(randomItem)[0]];
          itemI = randomItem[Object.keys(randomItem)[1]];
-         console.log("Drugi ", itemI);
          
          pe.innerHTML = itemE;
          input ? pi.innerHTML = '' : pi.innerHTML = `<i class="fa fa-times fa-lg"></i> ${itemI}`        
